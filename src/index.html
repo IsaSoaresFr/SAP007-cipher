@@ -9,8 +9,60 @@
     <body>
       <div id="root"> </div>
 
+      <div class="text">
+        <h1>Decode by CC &#x1F4AC</h1>
+      </div>
+
+      <img src="imgJulio.jpeg" alt="JulioCesar">
       
+
+      <div class="site">
+        <h3 class="one">. Site desenvolvido para criptar e descriptar mensagens<br> . baseado no método da cifra de César,<br> . permitindo que o usuário tenha
+        mais privacidade durante as suas conversas.</h3>
+      </div>
+
+
+      <br>
+       <main class="cifraDeCesar">
+        <h3 class="two">A cifra de César é um dos primeiros tipos de criptografias conhecidas na história.<br>
+        O imperador romano Júlio César utilizava essa cifra para enviar
+        ordens secretas aos seus generais no campo de batalha.</h3>
+       </main>
+      <br> 
+      
+      <div class="explain">
+       <h2>Como codificar e decodificar seus textos</h2>
+        <ul type="circle">
+          <li>Digite o texto a ser cifrado no campo TEXTO.</li>
+          <li>Escolha um número no campo CHAVE.</li>
+          <li>Quando o usuário apertar o botão CIFRAR, o texto codificado
+          irá aparecer na tela.</li>
+          <li>Quando o usuário apertar o botão DECIFRAR, o texto codificado
+          irá aparecer na tela.</li>
+        </ul>
+      </div>
+
+      <br>
     
+    <div class="all">
+
+    <div class="inputs">
+    <input type="text" placeholder="texto" id="Cifrar">
+    <input type="text" id="Decifrar"> 
+    </div> 
+
+    <div class="botoes">
+    <input type="number" placeholder="chave" id="offset">
+    <button type="button" onclick="cifrar()" id="botaoCifrar">Cifrar</button>
+    <button type="button" onclick="Decifrar()" id="botaoDecifrar">Decifrar</button>
+    </div>
+
+    </div> 
+
+    <div class="rodape">
+    <footer>Site desenvolvido por Isabela Soares - aluna da Laborátoria/2022</footer>
+    </div>
+
      <script src="index.js" type="module"></script>
     </body>
 </html>
