@@ -75,46 +75,49 @@ h1 {
   background-color:beige;  
   padding: 10%;
   position: relative;
-  right: 9%;
-  top: 15px;
+  right: 25%;
+  top: 27px;
 }
 
-#Decifrar{
+h4 {
   background-color:beige;  
   padding: 10%;
   position: relative;
-  left: 9%;
-  top: 15px;
+  left: 58%;
+  width: 15.5%;
+  top: -207px;
+  border-width:2px;
+  border-style: solid;
 }
 
 #offset {
  background-color: beige;
  position: relative;
  height: 10%;
- top: -170px;
+ top: -380px;
  padding: 1%;
  width: 50px;
- left: 67px;
+ left: 64px;
 }
 
 #botaoCifrar {
     background-color: beige;
     position: relative;
     height: 10%;
-    top: -100px;
+    top: -330px;
     padding: 1%;
     width: 65px;
-    right: 50px;   
+    right: 33px;   
 }
 
 #botaoDecifrar {
  background-color: beige;
  position: relative;
  height: 10%;
- top: -100px;
+ top: -330px;
  padding: 1%;
  width: 65px;
- right: 30px;
+ right: 32px;
 }
 
 .rodape {
