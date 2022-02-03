@@ -48,16 +48,32 @@
     <div class="all">
 
     <div class="inputs">
-    <textarea placeholder="texto" id="CifrarDecifrar" required></textarea>
+    <textarea placeholder="texto" id="CifrarDecifrar"></textarea>
     <textarea class="result" id="resultEncDec"></textarea>
     </div> 
 
     <div class="botoes">
     <input type="number" placeholder="chave" id="offset">
-    <button type="button" onclick="cifrar()" id="botaoCifrar">Cifrar</button>
-    <button type="button" onclick="Decifrar()" id="botaoDecifrar">Decifrar</button>
+    <button type="button" id="botaoCifrar">Cifrar</button>
+    <button type="button" id="botaoDecifrar">Decifrar</button>
     </div>
   </main> 
+
+
+  <div class="explain2">
+    A cifra de César é uma das técnicas mais simples de cifrar uma mensagem.<br>
+    É um tipo de cifra por substituição,<br> em que cada letra do texto original é substituida por outra que se encontra há um número fixo de posições (deslocamento) mais a frente do mesmo alfabeto.<br>
+    <br>
+    Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br>
+    <br>
+    Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+    <br>
+    Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C<br>
+    <br>
+    A letra A será D<br>
+    A palavra CASA será FDVD<br>
+
+  </div>
 
     <div class="rodape">
     <footer>Site desenvolvido por Isabela Soares - aluna da Laborátoria/2022</footer>

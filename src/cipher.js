@@ -5,16 +5,15 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
 
   for(let i=0; i<text.length; i++){
     let criptado = text.charCodeAt(i);
-  if(criptado >= 65 && <= 90){
+  if(criptado >=65 && <= 90){
     textoCriptado += String.fromCharCode(((criptado - 65 + offset) %26 ) +65 );
   }
   else if (criptado == 32) {
     textoCriptado += text.charAt(i);
   }
   } 
-  return textoCriptado;
+  return textoCriptado; 
   },
-
 
 
   decode: function (offset, text) {

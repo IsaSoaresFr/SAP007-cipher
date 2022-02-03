@@ -59,34 +59,36 @@ h1 {
 .all {
     background-color: white;
     margin-right: 2%;
-    height: 320px;
-    width: 60%;
+    height: 300px;
+    width: 110%;
     border-style: groove;
     border-style: hidden;
     padding: 1%;
-    top: 130%;
-    left: 18%;
-    position: absolute;
+    padding-inline:unset;
+    top: -366%;
+    left: 26%;
+    position: relative;
     text-align:center;
 }
 
-#CifrarDecifrar {
+#Cifrar {
  
   background-color:beige;  
   padding: 10%;
-  position: absolute;
-  right: 56%;
-  top: 14%;
-  text-align: ;
+  position: relative;
+  right: 25%;
+  top: 27px;
+  text-align: center;
   text-size-adjust:inherit;
 }
 
-#resultEncDec {
+.result {
   background-color:beige;  
   padding: 10%;
-  position: absolute;
-  left: 54%;
-  top: 14%;
+  position: relative;
+  left: 15%;
+  width: 15.5%;
+  top: -100px;
   border-width:2px;
   border-style: solid;
   text-align: center;
@@ -95,56 +97,42 @@ h1 {
 
 #offset {
  background-color: beige;
- position: absolute;
+ position: relative;
  height: 10%;
- top: 40%;
+ top: -380px;
  padding: 1%;
  width: 50px;
- left: 45%;
+ left: 64px;
 }
 
 #botaoCifrar {
     background-color: beige;
-    position: absolute;
+    position: relative;
     height: 10%;
-    top: 83%;
+    top: -330px;
     padding: 1%;
     width: 65px;
-    right: 85%;   
+    right: 33px;   
 }
 
 
 #botaoDecifrar {
  background-color: beige;
- position: absolute;
+ position: relative;
  height: 10%;
- top: 83%;
+ top: -330px;
  padding: 1%;
  width: 65px;
- right: 77%;
+ right: 32px;
 }
-
-.explain2 {
-    background-color: white;
-    font-family: OCR A Std, monospace;
-    font-size: 120%;
-    margin-right: 2%;
-    height: 50%;
-    border-style: groove;
-    border-style: hidden;
-    top: 195%;
-    left: 6%;
-    position: absolute;
-    text-align:center;
-}
-
 
 .rodape {
  color: beige;
  height: 20%;
- top: 265%;
+ top: -320%;
  left: 530px;
- position: absolute;
+ position: relative;
 }
+
 
 
