@@ -77,7 +77,6 @@ h1 {
   position: absolute;
   right: 56%;
   top: 14%;
-  text-align: ;
   text-size-adjust:inherit;
 }
 
@@ -128,7 +127,7 @@ h1 {
     background-color: white;
     font-family: OCR A Std, monospace;
     font-size: 120%;
-    margin-right: 2%;
+    margin-right: 5%;
     height: 50%;
     border-style: groove;
     border-style: hidden;
