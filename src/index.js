@@ -1,27 +1,29 @@
 import cipher from './cipher.js';
 
-const botao = document.getElementById("botaoCifrar")
-botao.addEventListener("click", mostrarRespostas)
+const bottomEnc = document.getElementById("botaoCifrar");
 
+function textEncrypt() {
 
-function mostrarRespostas(){
-    window.write("testes" #Decifrar)
-    return 
+let oFfset = Number(document.getElementById("offset").value);
+let textValue = document.getElementById("CifrarDecifrar").value;
+const encryptingText = cipher.encode(oFfset, textValue);
+document.getElementById("resultEncDec").innerHTML = encryptingText;
 }
+bottomEnc.addEventListener('click', textEncrypt)
 
 
 
 
+const bottomDec = document.getElementById("botaoDecifrar");
 
+function textDecrypt() {
 
-
-
-
-
-
-
-
-
+let oFfset = Number(document.getElementById("offset").value);
+let textValue = document.getElementById("CifrarDecifrar").value;
+const decryptText = cipher.decode(oFfset, textValue);
+document.getElementById("resultEncDec").innerHTML = decryptText;
+}
+bottomDec.addEventListener('click', textDecrypt)
 
 
 
