@@ -1,37 +1,37 @@
 const cipher = { //essa constante é um objeto, irá conter toda a função de Cifrar  Decifrar, será chamada no index.
 
-  encode: function (offset, text) {
-    let textoCriptado = " ";
+  encode: function (offset, string) {
+    let resultadoEncode = " "
+    let quantidadeDeLetras = string.length
+    
+  for(let i=0; i<string.length; i++){
+   let valorTabelaAscii = string.charCodeAt(i)
 
-  for(let i=0; i<text.length; i++){
-    let criptado = text.charCodeAt(i);
-  if(criptado >=65 && <= 90){
-    textoCriptado += String.fromCharCode(((criptado - 65 + offset) %26 ) +65 );
+   let codigoLetraA = 65
+   let valorCodificado = ((valorTabelaAscii - codigoLetraA + offset)% 26) + codigoLetraA;
+
+   resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
+
   }
-  else if (criptado == 32) {
-    textoCriptado += text.charAt(i);
-  }
-  } 
-  return textoCriptado; 
+  return resultadoEncode;
   },
 
 
-  decode: function (offset, text) {
-    let textoDescriptado = " ";
+  decode: function (offset, stringg) {
+    let resultadoDecode = " "
+    let quantidadeDeLetras = stringg.length
 
-  for(let i=0; i<text.length; i++){
-    let descriptado = text.charCodeAt(i);
-  if(descriptado >= 65 && <= 90){
-    textoDescriptado += String.fromCharCode(((descriptado - 65 + offset) %26 ) +65 );
+  for(let i=0; i<stringg.length; i++){
+  let valorTabelaAscii2 = stringg.charCodeAt(i)
+
+  let codigoLetraA2 = 90
+  let valorDecodificado = ((valorTabelaAscii2 - codigoLetraA2 - offset)% 26) + codigoLetraA2;
+
+  resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
+
+  }  
+  return resultadoDecode;
   }
-  else if (descriptado == 32) {
-    textoDescriptado += text.charAt(i);
-  }
-  } 
-  return textoDescriptado;
-  }
-
-};
-
-
-export default cipher;
+  }  
+  
+  export default cipher;

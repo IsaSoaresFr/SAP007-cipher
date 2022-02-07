@@ -34,7 +34,7 @@
     <h2>Como codificar e decodificar seus textos</h2>
     <ul type="circle">
           <li>Digite o texto a ser cifrado no campo TEXTO.</li>
-          <li>Escolha um número no campo CHAVE.</li>
+          <li>Escolha um número no campo CHAVE (POSITIVO para Cifrar, NEGATIVO para Decifrar)</li>
           <li>Quando o usuário apertar o botão CIFRAR, o texto codificado
           irá aparecer na tela.</li>
           <li>Quando o usuário apertar o botão DECIFRAR, o texto decodificado
@@ -48,14 +48,19 @@
     <div class="all">
 
     <div class="inputs">
-    <textarea placeholder="texto" id="CifrarDecifrar"></textarea>
-    <textarea class="result" id="resultEncDec"></textarea>
+    <textarea placeholder="texto" id="cifrarDecifrar"></textarea>
     </div> 
+
+    <div class="resultado">
+    <p class="result" id="resultEncDec"></p>
+    </div>
 
     <div class="botoes">
     <input type="number" placeholder="chave" id="offset">
-    <button type="button" id="botaoCifrar">Cifrar</button>
-    <button type="button" id="botaoDecifrar">Decifrar</button>
+    <input type="button"  id="botaoCifrar" value="Cifrar">
+    <input type="button"  id="botaoDecifrar" value="Decifrar">
+    </div>
+    
     </div>
   </main> 
 

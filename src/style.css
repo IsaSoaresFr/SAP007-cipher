@@ -70,26 +70,31 @@ h1 {
     text-align:center;
 }
 
-#CifrarDecifrar {
+textarea {
  
   background-color:beige;  
   padding: 10%;
   position: absolute;
   right: 56%;
-  top: 14%;
+  top: 16%;
   text-size-adjust:inherit;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 2px;
 }
 
 #resultEncDec {
   background-color:beige;  
-  padding: 10%;
+  padding: 12%;
   position: absolute;
   left: 54%;
-  top: 14%;
+  top: 11.5%;
   border-width:2px;
   border-style: solid;
   text-align: center;
   text-size-adjust:inherit;
+  border-radius: 10%;
+  width: 14%;
 }
 
 #offset {
@@ -145,5 +150,3 @@ h1 {
  left: 530px;
  position: absolute;
 }
-
-

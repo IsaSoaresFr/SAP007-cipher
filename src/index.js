@@ -1,34 +1,30 @@
 import cipher from './cipher.js';
 
-const bottomEnc = document.getElementById("botaoCifrar");
+document.getElementById("botaoCifrar").addEventListener("click", textEncrypt);
 
-function textEncrypt(e) {
+function textEncrypt () {
 
-e.preventDefault()
-let oFfset = Number(document.getElementById("offset").value);
-let textValue = document.getElementById("CifrarDecifrar").value;
-const encryptingText = cipher.encode(oFfset, textValue);
-document.getElementById("resultEncDec").innerHTML = encryptingText;
+let textValue = document.getElementById("cifrarDecifrar").value;
+let oFfset = document.getElementById("offset").value;
+let converter = Number(oFfset);
+let resposta = document.getElementById("resultEncDec");
+let valorCod = cipher.encode(converter, textValue);
+
+resposta.innerHTML = valorCod;
+
 }
-bottomEnc.addEventListener('click', textEncrypt)
 
 
+document.getElementById("botaoDecifrar").addEventListener("click",textDecrypt );
 
+function textDecrypt () {
 
-const bottomDec = document.getElementById("botaoDecifrar");
+let textValue = document.getElementById("cifrarDecifrar").value;
+let oFfset = document.getElementById("offset").value;
+let converter = Number(oFfset);
+let resposta = document.getElementById("resultEncDec");
+let valorDec = cipher.encode(converter, textValue);
 
-function textDecrypt(e) {
+resposta.innerText = valorDec;
 
-e.preventDefault
-let oFfset = Number(document.getElementById("offset").value);
-let textValue = document.getElementById("CifrarDecifrar").value;
-const decryptText = cipher.decode(oFfset, textValue);
-document.getElementById("resultEncDec").innerHTML = decryptText;
 }
-bottomDec.addEventListener('click', textDecrypt)
-
-
-
-
-console.log(cipher);
-
