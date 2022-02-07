@@ -77,7 +77,8 @@ textarea {
   position: absolute;
   right: 56%;
   top: 16%;
-  text-size-adjust:inherit;
+  text-align: left;
+  text-align-last: left;
   border-radius: 10%;
   border-style: solid;
   border-width: 2px;
@@ -91,10 +92,9 @@ textarea {
   top: 11.5%;
   border-width:2px;
   border-style: solid;
-  text-align: center;
-  text-size-adjust:inherit;
   border-radius: 10%;
   width: 14%;
+  display: flexbox;
 }
 
 #offset {
@@ -126,6 +126,17 @@ textarea {
  padding: 1%;
  width: 65px;
  right: 77%;
+}
+
+#refresh {
+    background-color: beige;
+    position: absolute;
+    height: 11%;
+    top: 83%;
+    padding-right: 1.5%;
+    width: 65px;
+    right: 67%;  
+    text-align:end;
 }
 
 .explain2 {
