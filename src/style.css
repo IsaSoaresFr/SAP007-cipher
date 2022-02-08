@@ -15,56 +15,67 @@ h1 {
 }
 
 .site {
-    background-color: white;
-    font-family: OCR A Std, monospace;
+    background-color:  rgb(240, 240, 240);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3ch;
     margin-right: 2%;
     border-style: groove;
     border-style: hidden;
     padding: 1%;
     padding-inline:unset;
-    top: -399%;
-    left: 32%;
+    top: -415%;
+    left: 35%;
     position: relative;
     text-align: center;
+    border-radius: 9%;
 }
 
 .cifraDeCesar {
-    background-color: white;
-    font-family: OCR A Std, monospace;
+    background-color:rgb(240, 240, 240);
+    font-size: 2.5ch;
+    font-family:'Courier New', Courier, monospace;
     margin-right: 2%;
     border-style: groove;
     border-style: hidden;
     padding: 1%;
     padding-inline:unset;
-    top: -388%;
-    left: 32%;
+    top: -409%;
+    left: 35%;
     position: relative;
+    text-align: center;
+    border-radius: 9%;
+}
+
+.titleExplain {
     text-align: center;
 }
 
 .explain {
-    background-color: white;
-    font-family: OCR A Std, monospace;
+    background-color: rgb(240, 240, 240);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5ch;
     margin-right: 2%;
     border-style: groove;
     border-style: hidden;
     padding: 1%;
     padding-inline:unset;
-    top: -377%;
-    left: 32%;
+    top: -403%;
+    left: 35%;
     position: relative;
-    text-align:center;
+    text-align:left;
+    border-radius: 9%;
 }
 
 .all {
-    background-color: white;
+    background-color:white;
     margin-right: 2%;
     height: 320px;
     width: 60%;
     border-style: groove;
     border-style: hidden;
-    padding: 1%;
-    top: 130%;
+    border-radius: 9%;
+    padding: 3.5%;
+    top: 165%;
     left: 18%;
     position: absolute;
     text-align:center;
@@ -72,7 +83,7 @@ h1 {
 
 textarea {
  
-  background-color:beige;  
+  background-color:rgb(206, 189, 154);  
   padding: 10%;
   position: absolute;
   right: 56%;
@@ -85,7 +96,7 @@ textarea {
 }
 
 #resultEncDec {
-  background-color:beige;  
+  background-color:rgb(206, 189, 154);  
   padding: 12%;
   position: absolute;
   left: 54%;
@@ -98,7 +109,7 @@ textarea {
 }
 
 #offset {
- background-color: beige;
+ background-color:rgb(206, 189, 154);
  position: absolute;
  height: 10%;
  top: 40%;
@@ -108,7 +119,7 @@ textarea {
 }
 
 #botaoCifrar {
-    background-color: beige;
+    background-color:rgb(206, 189, 154);
     position: absolute;
     height: 10%;
     top: 83%;
@@ -119,7 +130,7 @@ textarea {
 
 
 #botaoDecifrar {
- background-color: beige;
+ background-color:rgb(206, 189, 154);
  position: absolute;
  height: 10%;
  top: 83%;
@@ -129,7 +140,7 @@ textarea {
 }
 
 #refresh {
-    background-color: beige;
+    background-color: rgb(206, 189, 154);
     position: absolute;
     height: 11%;
     top: 83%;
@@ -140,14 +151,16 @@ textarea {
 }
 
 .explain2 {
-    background-color: white;
-    font-family: OCR A Std, monospace;
-    font-size: 120%;
+    background-color:rgb(240, 240, 240) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3ch;
+    font-weight: 400;
     margin-right: 5%;
     height: 50%;
     border-style: groove;
     border-style: hidden;
-    top: 195%;
+    border-radius: 9%;
+    top: 235%;
     left: 6%;
     position: absolute;
     text-align:center;
@@ -157,7 +170,7 @@ textarea {
 .rodape {
  color: beige;
  height: 20%;
- top: 265%;
- left: 530px;
+ top: 299%;
+ left: 535px;
  position: absolute;
 }
