@@ -1,11 +1,8 @@
-import cipher from './cipher.js';
-
 const btnReset = document.querySelector('#refresh')
 
 btnReset.addEventListener("click", () =>{
  location.reload()
 })
-
 
 document.getElementById("botaoCifrar").addEventListener("click", textEncrypt);
 
@@ -18,8 +15,8 @@ let resposta = document.getElementById("resultEncDec");
 let valorCod = cipher.encode(converter, textValue);
 
 resposta.innerHTML = valorCod;
-}
 
+}
 
 
 document.getElementById("botaoDecifrar").addEventListener("click",textDecrypt );
@@ -33,6 +30,5 @@ let resposta = document.getElementById("resultEncDec");
 let valorDec = cipher.decode(converter, textValue);
 
 resposta.innerText = valorDec;
+
 }
-
-

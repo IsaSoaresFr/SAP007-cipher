@@ -3,7 +3,6 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
   encode: function (offset, string) {
     let resultadoEncode = " "
     let quantidadeDeLetras = string.length
-
     
   for(let i=0; i<quantidadeDeLetras; i++) {
    let valorTabelaAscii = string.charCodeAt(i)
@@ -11,12 +10,7 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
    let codigoLetraA = 65
    let valorCodificado = ((valorTabelaAscii - codigoLetraA + offset)% 26) + codigoLetraA;
 
-   if ( valorTabelaAscii >= 65 (valorTabelaAscii <= 90)) {
-    resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado)) 
-
-   } else if (valorTabelaAscii === 32) {
-    resultadoEncode = resultadoEncode.concat.charCodeAt(valorCodificado)
-   }
+   resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
 
   }
   return resultadoEncode;
@@ -26,7 +20,6 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
   decode: function (offset, stringg) {
     let resultadoDecode = " "
     let quantidadeDeLetras2 = stringg.length
-
 
   for(let i=0; i<quantidadeDeLetras2; i++){
   let valorTabelaAscii2 = stringg.charCodeAt(i)
