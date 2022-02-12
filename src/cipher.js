@@ -1,43 +1,55 @@
 const cipher = { //essa constante é um objeto, irá conter toda a função de Cifrar  Decifrar, será chamada no index.
 
   encode: function (offset, string) {
+    if( typeof offset !== "number" || typeof string !== "string") {
+      throw new TypeError }
+
     let resultadoEncode = " "
     let quantidadeDeLetras = string.length
-
     
-  for(let i=0; i<quantidadeDeLetras; i++) {
-   let valorTabelaAscii = string.charCodeAt(i)
+    for(let i=0; i<quantidadeDeLetras; i++) {
+    let valorTabelaAscii = string.charCodeAt(i)
+    let codPrimeiraLetra = 65
+   
+    if (valorTabelaAscii >= 32 && valorTabelaAscii <= 122 ) {
+    let valorCodificado = ((valorTabelaAscii - codPrimeiraLetra + offset)% 26) + codPrimeiraLetra;
+    resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
 
-   let codigoLetraA = 65
-   let valorCodificado = ((valorTabelaAscii - codigoLetraA + offset)% 26) + codigoLetraA;
-
-   if ( valorTabelaAscii >= 65 (valorTabelaAscii <= 90)) {
-    resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado)) 
-
-   } else if (valorTabelaAscii === 32) {
-    resultadoEncode = resultadoEncode.concat.charCodeAt(valorCodificado)
+   } else {
+    let valorCodificado = ((valorTabelaAscii - codPrimeiraLetra + offset)% 26) + codPrimeiraLetra;
+    resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
    }
-
-  }
+   }
   return resultadoEncode;
-  },
+   },
+
+
 
 
   decode: function (offset, stringg) {
+    if( typeof offset !== "number" || typeof stringg !== "string") {
+      throw new TypeError }
+
     let resultadoDecode = " "
     let quantidadeDeLetras2 = stringg.length
 
+    for(let i=0; i<quantidadeDeLetras2; i++){
+    let valorTabelaAscii2 = stringg.charCodeAt(i)
+    let codUltimaLetra = 90
 
-  for(let i=0; i<quantidadeDeLetras2; i++){
-  let valorTabelaAscii2 = stringg.charCodeAt(i)
-
-  let codigoLetraA2 = 90
-  let valorDecodificado = ((valorTabelaAscii2 - codigoLetraA2 - offset)% 26) + codigoLetraA2;
-
-  resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
-
-  }  
+     if (valorTabelaAscii2 >= 32 && valorTabelaAscii2 <= 122 ) {
+    let valorDecodificado = ((valorTabelaAscii2 - codUltimaLetra - offset)% 26) + codUltimaLetra;
+    resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
+}
+   else { 
+   let valorDecodificado = ((valorTabelaAscii2 - codUltimaLetra - offset)% 26) + codUltimaLetra;
+   resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
+   }
+   }
   return resultadoDecode;
-  }
-  }  
+   }
+   }
+   
+   
+
   export default cipher;
