@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CaesarCipher/Laboratoria</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-    <body>
-    <div id="root"> </div>
+<head>
+  <meta charset="utf-8">
+  <title>CaesarCipher/Laboratoria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div class="text">
+<body>
+  <div id="root"> </div>
+
+  <div class="text">
     <h1>Decode by CC &#x1F4AC</h1>
-    </div>
+  </div>
 
-    <img src="imgJulio.jpeg" alt="JulioCesar">
-      
-
-    <div class="site">
-    <h3 class="one">.. Site desenvolvido para criptar e descriptar mensagens<br><br> .. Baseado no método da cifra de César,<br><br> .. Permitindo que o usuário tenha
-        mais privacidade durante as suas conversas.</h3>
-    </div>
+  <img src="imgJulio.jpeg" alt="JulioCesar">
 
 
-    <br>
-    <main class="cifraDeCesar">
+  <div class="site">
+    <h3 class="one">.. Site desenvolvido para criptar e descriptar mensagens<br><br> .. Baseado no método da cifra de
+      César,<br><br> .. Permitindo que o usuário tenha
+      mais privacidade durante as suas conversas.</h3>
+  </div>
+
+
+  <br>
+  <main class="cifraDeCesar">
     <h3 class="two">A cifra de César é um dos primeiros tipos de criptografias conhecidas na história.<br>
-        O imperador romano Júlio César utilizava essa cifra para enviar
-        ordens secretas aos seus generais no campo de batalha.</h3>
-    </main>
-    <br> 
-      
-    <div class="explain">
+      O imperador romano Júlio César utilizava essa cifra para enviar
+      ordens secretas aos seus generais no campo de batalha.</h3>
+  </main>
+  <br>
+
+  <div class="explain">
     <div class="titleExplain">
-    <h2>Como codificar e decodificar seus textos</h2>
+      <h2>Como codificar e decodificar seus textos</h2>
     </div>
     <ul type="circle">
-          <li>Digite o texto a ser cifrado no campo TEXTO.</li>
-          <br>
-          <li>Escolha um número no campo CHAVE (POSITIVO para Cifrar, NEGATIVO para Decifrar)</li>
-          <br>
-          <li>Quando o usuário apertar o botão CIFRAR, o texto codificado
-          irá aparecer na tela.</li>
-          <br>
-          <li>Quando o usuário apertar o botão DECIFRAR, o texto decodificado
-          irá aparecer na tela.</li>
-          <br>
+      <li>Digite o texto a ser cifrado no campo TEXTO.</li>
+      <br>
+      <li>Escolha um número no campo CHAVE (POSITIVO para Cifrar, NEGATIVO para Decifrar)</li>
+      <br>
+      <li>Quando o usuário apertar o botão CIFRAR, o texto codificado
+        irá aparecer na tela.</li>
+      <br>
+      <li>Quando o usuário apertar o botão DECIFRAR, o texto decodificado
+        irá aparecer na tela.</li>
+      <br>
     </ul>
-    </div>
+  </div>
 
-    <br>
+  <br>
 
   <main>
     <div class="all">
 
-    <div class="inputs">
-    <textarea placeholder="texto" id="cifrarDecifrar"></textarea>
-    </div> 
+      <div class="inputs">
+        <textarea placeholder="texto" id="cifrarDecifrar"></textarea>
+      </div>
 
-    <button id="refresh">Novo Texto</button>
+      <button id="refresh">Novo Texto</button>
 
-    <div class="resultado">
-    <textarea class="result" rows="10" cols="10" id="resultEncDec"></textarea>
-    </div>
+      <div class="resultado">
+        <textarea class="result" rows="10" cols="10" id="resultEncDec"></textarea>
+      </div>
 
-    <div class="botoes">
-    <input type="number" min="0" max="100000000000" placeholder="chave" id="offset">
-    <input type="button"  id="botaoCifrar" value="Cifrar">
-    <input type="button"  id="botaoDecifrar" value="Decifrar">
+      <div class="botoes">
+        <input type="number" min="0" max="100000000000" placeholder="chave" id="offset">
+        <input type="button" id="botaoCifrar" value="Cifrar">
+        <input type="button" id="botaoDecifrar" value="Decifrar">
+      </div>
+
     </div>
-    
-    </div>
-  </main> 
+  </main>
 
 
   <div class="explain2">
     A cifra de César é uma das técnicas mais simples de cifrar uma mensagem.<br>
-    É um tipo de cifra por substituição,<br> em que cada letra do texto original é substituida por outra que se encontra há um número fixo de posições (deslocamento) mais a frente do mesmo alfabeto.<br>
+    É um tipo de cifra por substituição,<br> em que cada letra do texto original é substituida por outra que se encontra
+    há um número fixo de posições (deslocamento) mais a frente do mesmo alfabeto.<br>
     <br>
     Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br>
     <br>
@@ -88,12 +91,12 @@
 
   </div>
 
-    <div class="rodape">
+  <div class="rodape">
     <footer>Site desenvolvido por Isabela Soares - aluna da Laborátoria/2022</footer>
-    <a href="https://github.com//IsaSoaresFr" target="_blank" >Github </a>
-    </div>
-    
-     <script src="index.js" type="module"></script>
-    </body>
+    <a href="https://github.com//IsaSoaresFr" target="_blank">Github </a>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
-  
