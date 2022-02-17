@@ -1,7 +1,9 @@
 const cipher = { //essa constante é um objeto, irá conter toda a função de Cifrar  Decifrar, será chamada no index.
 
-  encode: function (offset, string) {
-    if (typeof offset !== "number" || typeof string !== "string") {
+  encode: function (offset, string) 
+  
+
+    {if (typeof offset !== "number" || typeof string !== "string") {
       throw new TypeError
     }
 
@@ -39,20 +41,19 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
     for (let i = 0; i < quantidadeDeLetras2; i++) {
       let valorTabelaAscii2 = stringg.charCodeAt(i)
       let codUltimaLetra = 90
+      let codUltimaMinuscula = 122
 
-      if (valorTabelaAscii2 >= 32 && valorTabelaAscii2 <= 122) {
+      if (valorTabelaAscii2 >= 65 && valorTabelaAscii2 <= 90) {
         let valorDecodificado = ((valorTabelaAscii2 - codUltimaLetra - offset) % 26) + codUltimaLetra;
         resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
       }
-      else {
-        let valorDecodificado = ((valorTabelaAscii2 - codUltimaLetra - offset) % 26) + codUltimaLetra;
+      else if (valorTabelaAscii2 >= 97 && valorTabelaAscii2 <= 122){
+        let valorDecodificado = ((valorTabelaAscii2 - codUltimaMinuscula - offset) % 26) + codUltimaMinuscula;
         resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
       }
     }
     return resultadoDecode;
   }
 }
-
-
 
 export default cipher;

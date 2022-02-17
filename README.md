@@ -1,38 +1,33 @@
 # DECODE BY CC 
-O SITE DECODE BY CC É UM SITE INSPIRADO NO MÉTODO DA CIFRA DE CÉSAR. 
-CONSISTE EM CIFRAR E DECIFRAR TEXTOS, PROPORCIONANDO PARA O USUÁRIO MAIS : 
+o site Decode by CC é um site inspirado no método da cifra de César.
+consiste em cifrar e decifrar textos, proporcionando para o usuário mais: 
  
-- PRIVACIDADE DURANTE SUAS CONVERSAS. 
-- SEGURANÇA AO CIFRAR E DECIFRAR MENSAGENS, TEXTOS, SENHAS. 
- 
+ - privacidade durante suas conversas.
+ - segurança ao cifrar e decifrar mensagens, textos e senhas.
  
  
 ## PROJETO 
-A CIFRA DE CÉSAR É UM TIPO DE CIFRAGEM DE TEXTO POR SUBSTITUIÇÃO DE LETRAS, PARA ESSA  
-AÇÃO É NECESSÁRIO UM NÚMERO, QUE IRÁ DETERMINAR A QUANTIDADE DE “CASAS” OU DESLOCAMENTO DAS LETRAS... 
- 
+A cifra de césar é um tipo de cifragem de texto por substituição de letras, para essa ação é necessário um número, que irá determinar a quantidade de "casas" ou deslocamento das letras... 
  
  
 ## INSTRUÇÕES 
-POR EXEMPLO: 
+Por exemplo:
  
-EU TENHO UMA PALAVRA: 
+Eu tenho uma palavra:
 OLÁ DEV 
  
-OFFSET(CHAVE):  
+Offset(chave):  
 3 
 --QUANDO É OFERECIDO UM NÚMERO, O PROGRAMA IRÁ “PULAR” 3 CASAS PARA FRENTE 
  
-TEXTO CIFRADO: 
+Texto cifrado: 
 ROD GHY 
 --ENTÃO O TEXTO, JÁ CIFRADO, IRÁ FICARÁ ASSIM  
  
-(O MÉTODO DE DECIFRAGEM É IGUAL, O USUÁRIO SÓ PRECISARÁ ESCOLHER UM NÚMERO NEGATIVO). 
- 
- 
+ (o método de decifragem é igual). 
+  
 ## LAYOUT 
-O DESIGN DA PÁGINA FOI INSPIRADO EM PÁGINAS MODERNAS DE PROGRAMAÇÃO, A ORGANIZAÇÃO FOI PENSADA EM OFERECER INFORMAÇÕES AO USUÁRIO E PARA QUE ELE TIVESSE 
-UMA BOA EXPERIÊNCIA NA CIFRAGEM E DECIFRAGEM DE TEXTOS. 
+O design da página foi inspirado em páginas modernas de programação, a organização foi pensada em oferecer informações ao usuário e para que ele tivesse uma boa experiência ao cifrar e decifrar textos. 
 
 ![layout do meu site](https://github.com/IsaSoaresFr/SAP007-cipher/blob/main/Layout.png)
 
@@ -41,11 +36,9 @@ UMA BOA EXPERIÊNCIA NA CIFRAGEM E DECIFRAGEM DE TEXTOS.
 
  
 ## CHAVE DE DESLOCAMENTO 
-- NÚMEROS POSITIVOS. 
-- NÚMEROS NEGATIVOS.
+- Números positivos
  
 ## TECNOLOGIAS 
-- JAVASCRIPT 
-- CSS3 
-- HTML5 
- 
+- Javascript
+- Css3
+- Html5
