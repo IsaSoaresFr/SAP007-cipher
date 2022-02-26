@@ -106,4 +106,98 @@ body{
   position: absolute;
 }
 
+@media (max-width: 600px) {
+  body{
+    background-color: black;
+    width: 70vw;
+    height: 60vh;
+  }
 
+  Título {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    left: 25%;
+    font-size: 3rem;
+  }
+
+  .class {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 20%;
+    font-size: 2rem;
+    border-radius: 5%;
+    text-align: center;
+  }
+
+  .site {
+    top:-1200px
+  }
+
+  .historia {
+    top:-1170px;
+  }
+
+  .explicacao {
+    top:-1130px;
+}
+
+.comoUsar {
+  top:-1100px;
+}
+
+.inputs {
+  top:-1000px;
+  padding: 50px;
+}
+
+.cifrar-e-decifrar {
+  width: 90%;
+}
+
+.resultado {
+  width: 90%;
+  top: -1px;
+}
+
+.chave {
+  position: absolute;
+  top: 195px;
+  height: 35px;
+  width: 6%;
+  left: 15px;
+  border-radius: 5%;
+  background-color: beige;
+}
+
+.botao {
+    position: absolute;
+    top: 385px;
+    height: 35px;
+    width: 6%;
+    border-radius: 5%;
+    background-color: beige;
+}
+
+.cifrar {
+  left: 150px;
+}
+
+.decifrar {
+  left: 220px;
+}
+
+.reset {
+  left: 310px;
+}
+
+.imagem {
+  position: absolute;
+}
+
+.footer{
+  position: relative;
+  top: -900px;
+}
+}
