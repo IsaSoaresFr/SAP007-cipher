@@ -1,7 +1,7 @@
 const cipher = { //essa constante é um objeto, irá conter toda a função de Cifrar  Decifrar, será chamada no index.
 
-  encode: function (offset, string) 
-  
+  encode: function (offset, string)
+
 
     {if (typeof offset !== "number" || typeof string !== "string") {
       throw new TypeError
@@ -20,6 +20,10 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
         resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
 
       } else if (valorTabelaAscii >= 97 && valorTabelaAscii <= 122) {
+        let valorCodificado = ((valorTabelaAscii - codMinuscula + offset) % 26) + codMinuscula;
+        resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
+
+      } else if (valorTabelaAscii == 32) {
         let valorCodificado = ((valorTabelaAscii - codMinuscula + offset) % 26) + codMinuscula;
         resultadoEncode = resultadoEncode.concat(String.fromCharCode(valorCodificado))
       }
@@ -48,6 +52,10 @@ const cipher = { //essa constante é um objeto, irá conter toda a função de C
         resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
       }
       else if (valorTabelaAscii2 >= 97 && valorTabelaAscii2 <= 122){
+        let valorDecodificado = ((valorTabelaAscii2 - codUltimaMinuscula - offset) % 26) + codUltimaMinuscula;
+        resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
+
+      } else if (valorTabelaAscii2 == 32) {
         let valorDecodificado = ((valorTabelaAscii2 - codUltimaMinuscula - offset) % 26) + codUltimaMinuscula;
         resultadoDecode = resultadoDecode.concat(String.fromCharCode(valorDecodificado))
       }

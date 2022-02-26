@@ -1,91 +1,118 @@
-
 body{
-   background-color: black;
-   width: 70vw;
-   height: 60vh;
-}
+  background-color: black;
+   width: 70vw ;
+  }
+
 
 .Título {
-   color: white;
+   top: -50px;
+   color: rgb(255, 255, 255);
    font-family:'Courier New', Courier, monospace;
+   text-shadow: -3px -3px 2px rgb(95, 94, 94);
    position: relative;
    left: 25%;
    font-size: 3rem;
-}
+  }
 
 .class {
-   background-color: white;
-   font-family: 'Courier New', Courier, monospace;
-   position: relative;
-   left: 20%;
+  background-color: white;
+  font-family: serif;
+  position: relative;
+  left: 20%;
    font-size: 2rem;
-   border-radius: 5%;
+   border-radius: 2%;
    text-align: center;
-}
+  }
 
 .site {
-    top:-1200px
+  text-align: center;
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  top:-90px;
+  text-shadow: -3px -3px 2px rgb(95, 94, 94);
 }
 
 .historia {
-    top:-1170px;
+  top:-100px;
 }
 
 .explicacao {
-    top:-1130px;
-}
+   font-size: 1.5rem;
+   top:-90px;
+  }
 
 .comoUsar {
-    top:-1100px;
+  text-align: center;
+  top:-60px;
 }
 
 .inputs {
-    top:-1000px;
-    padding: 50px;
+  top:-50px;
+  padding: 50px;
+  height: 350px;
 }
 
 .cifrar-e-decifrar {
-    width: 90%;
-}
+   width: 90%;
+  }
 
 .resultado {
-    width: 90%;
-    top: -1px;
+  width: 90%;
+  top: -1px;
 }
-
 
 .chave {
-    position: absolute;
-    top: 212px;
-    height: 48px;
-    width: 6%;
-    left: 15px;
-    border-radius: 5%;
-    background-color: beige;
-}
+   position: absolute;
+   top: 212px;
+   height: 48px;
+   width: 6%;
+   left: 15px;
+   border-radius: 5%;
+   background-color: beige;
+  }
 
 .botao {
-    position: absolute;
-    top: 385px;
-    height: 35px;
-    width: 6%;
-    border-radius: 5%;
-    background-color: beige;
+  position: absolute;
+  top: -400%;
+  height: 35px;
+  width: 7%;
+  border-radius: 5%;
+  background-color: beige;
 }
 
 .cifrar {
-    left: 150px;
+  left: 100px;
 }
 
 .decifrar {
-    left: 220px;
+  left: 200px;
 }
 
 .reset {
-    left: 310px;
+  left: 310px;
 }
 
 .footer{
-    position: relative;
-    top: -900px;
+  position: relative;
+  top: -10px;
+  background-color: black;
+  color: white;
+  text-shadow: -3px -3px 2px rgb(95, 94, 94);
+  font-size: 1rem;
 }
+
+.imagem{
+  position: absolute;
+}
+
+@media screen and (min-width:768px) {
+  .botao {
+     position: absolute;
+     top: 400px;
+     height: 35px;
+     width: 10%;
+     border-radius: 5%;
+     background-color: beige;
+     }
+    }
