@@ -106,13 +106,4 @@ body{
   position: absolute;
 }
 
-@media screen and (min-width:768px) {
-  .botao {
-     position: absolute;
-     top: 400px;
-     height: 35px;
-     width: 10%;
-     border-radius: 5%;
-     background-color: beige;
-     }
-    }
+
