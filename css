@@ -1,28 +1,28 @@
 body{
   background-color: rgb(0, 0, 0);
-  width: 70vw ;
-}
+   width: 70vw ;
+  }
 
-.Título{
-  top: -50px;
-  color: rgb(255, 255, 255);
-  font-family:'Courier New', Courier, monospace;
-  text-shadow: -3px -3px 2px rgb(95, 94, 94);
-  position: relative;
-  left: 35%;
-  font-size:2.5rem;
-  width: 734px;
-}
+.Título {
+   top: -50px;
+   color: rgb(255, 255, 255);
+   font-family:'Courier New', Courier, monospace;
+   text-shadow: -3px -3px 2px rgb(95, 94, 94);
+   position: relative;
+   left: 35%;
+   font-size:2.5rem;
+   width: 734px;
+  }
 
 .class {
   background-color: white;
   font-family: serif;
   position: relative;
   left: 20%;
-  font-size: 1.5rem;
-  border-radius: 2%;
-  text-align: center;
-}
+   font-size: 1.5rem;
+   border-radius: 2%;
+   text-align: center;
+  }
 
 .site {
   text-align: center;
@@ -38,9 +38,9 @@ body{
 }
 
 .explicacao {
-  font-size: 1.5rem;
-  top:-80px;
-}
+   font-size: 1.5rem;
+   top:-80px;
+  }
 
 .comoUsar {
   text-align: center;
@@ -54,8 +54,8 @@ body{
 }
 
 .cifrar-e-decifrar {
-  width: 90%;
-}
+   width: 90%;
+  }
 
 .resultado {
   width: 90%;
@@ -63,14 +63,14 @@ body{
 }
 
 .chave {
-  position: absolute;
-  top: 212px;
-  height: 48px;
-  width: 6%;
-  left: 15px;
-  border-radius: 5%;
-  background-color: beige;
-}
+   position: absolute;
+   top: 212px;
+   height: 48px;
+   width: 6%;
+   left: 15px;
+   border-radius: 5%;
+   background-color: beige;
+  }
 
 .botao {
   position: absolute;
@@ -106,35 +106,34 @@ body{
   position: absolute;
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 400px) {
 
   body{
     background-color: rgb(0, 0, 0);
-    width: 70vw ;
-  }
+     width: 70vw ;
+    }
 
   .Título {
-    top: -20px;
-    color: rgb(255, 255, 255);
-    font-family:'Courier New', Courier, monospace;
-    text-shadow: -3px -3px 2px rgb(95, 94, 94);
-    position: relative;
-    left: 28%;
-    font-size:1.3rem;
-    width: 400px;
-  }
+     top: -20px;
+     color: rgb(255, 255, 255);
+     font-family:'Courier New', Courier, monospace;
+     text-shadow: -3px -3px 2px rgb(95, 94, 94);
+     position: relative;
+     left: 28%;
+     font-size:1.3rem;
+     width: 400px;
+    }
 
   .class {
     background-color: white;
     font-family: serif;
     position: relative;
     left: 20%;
-    font-size: 1rem;
-    border-radius: 2%;
-    text-align: center;
-    width: 447px;
-  }
+     font-size: 1rem;
+     border-radius: 2%;
+     text-align: center;
+     width: 447px;
+    }
 
   .site {
     text-align: center;
@@ -150,9 +149,9 @@ body{
   }
 
   .explicacao {
-    font-size: 1rem;
-    top:-25px;
-  }
+     font-size: 1rem;
+     top:-25px;
+    }
 
   .comoUsar {
     text-align: center;
@@ -168,8 +167,8 @@ body{
   }
 
   .cifrar-e-decifrar {
-    width: 90%;
-  }
+     width: 90%;
+    }
 
   .resultado {
     width: 90%;
@@ -177,14 +176,14 @@ body{
   }
 
   .chave {
-    position: absolute;
-    top: 165px;
-    height: 48px;
-    width: 7%;
-    left: 6px;
-    border-radius: 5%;
-    background-color: beige;
-  }
+     position: absolute;
+     top: 165px;
+     height: 48px;
+     width: 7%;
+     left: 6px;
+     border-radius: 5%;
+     background-color: beige;
+    }
 
   .botao {
     position: absolute;
@@ -197,15 +196,15 @@ body{
 
   .cifrar {
     left: 40px;
-  }
+   }
 
   .decifrar {
     left: 140px;
-  }
+   }
 
   .reset {
     left: 300px;
-  }
+   }
 
   .footer{
     position: relative;
@@ -214,7 +213,7 @@ body{
     color: white;
     text-shadow: -3px -3px 2px rgb(95, 94, 94);
     font-size: 1rem;
-  }
+   }
 
   .imagem{
     position: absolute;
