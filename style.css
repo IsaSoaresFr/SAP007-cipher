@@ -107,116 +107,57 @@ body{
 }
 
 
-@media (min-width: 600px) {
+@media screen and (max-width:768px) {
 
-  body{
-    background-color: rgb(0, 0, 0);
-    width: 70vw ;
-  }
-
-  .Título {
-    top: -20px;
-    color: rgb(255, 255, 255);
-    font-family:'Courier New', Courier, monospace;
-    text-shadow: -3px -3px 2px rgb(95, 94, 94);
-    position: relative;
-    left: 28%;
-    font-size:1.3rem;
-    width: 400px;
-  }
-
-  .class {
-    background-color: white;
-    font-family: serif;
-    position: relative;
-    left: 20%;
-    font-size: 1rem;
-    border-radius: 2%;
-    text-align: center;
-    width: 447px;
+  .Título{
+  top: -50px;
+  position: relative;
+  left: 35%;
+  font-size:1.5rem;
+  width: 734px;
   }
 
   .site {
-    text-align: center;
-    background-color: black;
-    font-size: 1rem;
-    color: white;
-    top:-45px;
-    text-shadow: -3px -3px 2px rgb(95, 94, 94);
+  top:-80px;
   }
 
   .historia {
-    top:-35px;
-  }
-
-  .explicacao {
-    font-size: 1rem;
-    top:-25px;
-  }
-
-  .comoUsar {
-    text-align: center;
-    top:-15px;
-  }
-
-  .inputs {
-    top:-25px;
-    padding: 30px;
-    height: 350px;
-    width: 400px;
-
-  }
-
-  .cifrar-e-decifrar {
-    width: 90%;
-  }
-
-  .resultado {
-    width: 90%;
-    top: -1px;
-  }
-
-  .chave {
-    position: absolute;
-    top: 165px;
-    height: 48px;
-    width: 7%;
-    left: 6px;
-    border-radius: 5%;
-    background-color: beige;
-  }
-
-  .botao {
-    position: absolute;
-    top: 365px;
-    height: 35px;
-    width: 14%;
-    border-radius: 5%;
-    background-color: beige;
+  top: -80px;
   }
 
   .cifrar {
-    left: 40px;
+  left: 80px ;
   }
 
   .decifrar {
-    left: 140px;
+  left: 170px ;
   }
 
   .reset {
-    left: 300px;
+  left:320px;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .Título {
+  width: 450px ;
   }
 
-  .footer{
-    position: relative;
-    top: -5px;
-    background-color: black;
-    color: white;
-    text-shadow: -3px -3px 2px rgb(95, 94, 94);
-    font-size: 1rem;
+  .site {
+  width: 400px;
   }
 
-  .imagem{
-    position: absolute;
+  .class {
+  width:400px;
+  }
+
+  .inputs {
+  width: 350px;
+  left:35px ;
+  }
+
+  .botao {
+  width:14% ;
   }
 }
